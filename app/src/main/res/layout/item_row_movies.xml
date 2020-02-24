@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        tools:src="@android:drawable/ic_menu_camera"/>
+    <TextView
+        android:id="@+id/judul_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_photo"
+        android:text="@string/judul_film"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@id/img_photo" />
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_judul"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_photo"
+        tools:text="Judul Film"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@id/img_photo" />
+    <TextView
+        android:id="@+id/judul_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_judul"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/tanggal_rilis"
+        android:layout_marginLeft="26dp" />
+    <TextView
+        android:id="@+id/txt_rilis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_tanggal"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        tools:text="Tanggal Rilis"
+        android:layout_marginLeft="26dp" />
+    <TextView
+        android:id="@+id/judul_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_rilis"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/rating_film"
+        android:layout_marginLeft="26dp" />
+    <ImageView
+        android:id="@+id/bintang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_rating"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:src="@drawable/ic_star_black_24dp"
+        android:layout_marginLeft="26dp"/>
+
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul_rating"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/bintang"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        tools:text="Rating Film" />
+
+</RelativeLayout>
